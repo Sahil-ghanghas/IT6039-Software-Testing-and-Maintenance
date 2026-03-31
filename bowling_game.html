@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module bowling_game</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">bowling_game</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cyoga%5Cdownloads%5Ctesting%5Cbowling_game.py">c:\users\yoga\downloads\testing\bowling_game.py</a></td></tr></table>
+    <p><span class="code">Bowling&nbsp;Game&nbsp;Implementation<br>
+A&nbsp;module&nbsp;for&nbsp;calculating&nbsp;bowling&nbsp;game&nbsp;scores&nbsp;according&nbsp;to&nbsp;standard<br>
+ten-pin&nbsp;bowling&nbsp;rules.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="bowling_game.html#BowlingGame">BowlingGame</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="BowlingGame">class <strong>BowlingGame</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Represents&nbsp;a&nbsp;single&nbsp;game&nbsp;of&nbsp;ten-pin&nbsp;bowling.<br>
+&nbsp;<br>
+A&nbsp;game&nbsp;consists&nbsp;of&nbsp;10&nbsp;frames.&nbsp;In&nbsp;each&nbsp;frame&nbsp;the&nbsp;bowler&nbsp;has&nbsp;up&nbsp;to<br>
+two&nbsp;chances&nbsp;to&nbsp;knock&nbsp;down&nbsp;10&nbsp;pins.&nbsp;The&nbsp;10th&nbsp;frame&nbsp;allows&nbsp;up&nbsp;to<br>
+three&nbsp;balls&nbsp;if&nbsp;a&nbsp;strike&nbsp;or&nbsp;spare&nbsp;is&nbsp;bowled.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rolls&nbsp;(list):&nbsp;A&nbsp;list&nbsp;of&nbsp;integers&nbsp;recording&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;per&nbsp;roll.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_roll&nbsp;(int):&nbsp;Tracks&nbsp;how&nbsp;many&nbsp;rolls&nbsp;have&nbsp;been&nbsp;made.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;game&nbsp;=&nbsp;<a href="#BowlingGame">BowlingGame</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;for&nbsp;_&nbsp;in&nbsp;range(12):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game.<a href="#BowlingGame-roll">roll</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;game.<a href="#BowlingGame-score">score</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;300<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="BowlingGame-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialise&nbsp;a&nbsp;new&nbsp;bowling&nbsp;game&nbsp;with&nbsp;an&nbsp;empty&nbsp;rolls&nbsp;list.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-roll"><strong>roll</strong></a>(self, pins)</dt><dd><span class="code">Record&nbsp;the&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;single&nbsp;roll.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pins&nbsp;(int):&nbsp;Number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;(0-10).</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-score"><strong>score</strong></a>(self)</dt><dd><span class="code">Calculate&nbsp;and&nbsp;return&nbsp;the&nbsp;total&nbsp;score&nbsp;for&nbsp;the&nbsp;completed&nbsp;game.<br>
+&nbsp;<br>
+Iterates&nbsp;through&nbsp;the&nbsp;first&nbsp;9&nbsp;frames&nbsp;applying&nbsp;strike&nbsp;and&nbsp;spare<br>
+bonuses,&nbsp;then&nbsp;handles&nbsp;the&nbsp;10th&nbsp;frame&nbsp;separately&nbsp;due&nbsp;to&nbsp;its<br>
+special&nbsp;bonus&nbsp;ball&nbsp;rules.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;total&nbsp;score&nbsp;across&nbsp;all&nbsp;10&nbsp;frames.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>MAX_FRAMES</strong> = 10</dl>
+
+<dl><dt><strong>MAX_PINS</strong> = 10</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
